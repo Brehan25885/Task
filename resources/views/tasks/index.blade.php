@@ -4,7 +4,7 @@
 @section('content')
 <div class="container">
 <h1 class="text-center">Tasks Index</h1>
-<a href="tasks/create" class="btn btn-success">Create New Post </a>
+<a href="tasks/create" class="btn btn-success">Create New Task </a>
 
 <table class="table">
 <tbody>
