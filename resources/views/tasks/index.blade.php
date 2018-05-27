@@ -11,7 +11,7 @@
 <td>
 {{ $task->tasks_list }} </td>
 <td>
-{{ $post->user->name }} </td>
+{{ $task->user->name }} </td>
 @endforeach
 </table>
 </div>
