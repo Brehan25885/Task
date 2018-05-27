@@ -14,6 +14,13 @@
 {{ $task->tasks_list }} </td>
 <td>
 {{ $task->user->name }} </td>
+<td >
+<form method="post" action="/tasks/{{$task->id}}" >
+    {{csrf_field()}}
+    {{method_field('DELETE')}}
+    <button onclick="return confirm('are you sure')" type="submit" class="btn btn-danger" > Delete </button>
+</form>
+</td>
 @endforeach
 </table>
 </div>

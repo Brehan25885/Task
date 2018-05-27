@@ -19,6 +19,6 @@ Auth::routes();
 Route::get('tasks','TasksController@index')->name('tasks')->middleware('auth');
 Route::get('tasks/create','TasksController@create')->middleware('auth');
 Route::post('tasks','TasksController@store')->middleware('auth');
-
+Route::delete('tasks/{task}','TasksController@destroy')->middleware('auth');
 
 Route::get('/home', 'HomeController@index')->name('home');
