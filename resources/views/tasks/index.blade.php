@@ -4,6 +4,8 @@
 @section('content')
 <div class="container">
 <h1 class="text-center">Tasks Index</h1>
+<a href="tasks/create" class="btn btn-success">Create New Post </a>
+
 <table class="table">
 <tbody>
 @foreach ($tasks as $task)
